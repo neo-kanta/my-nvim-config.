@@ -1,0 +1,40 @@
+local opt = vim.opt
+
+opt.number = true
+opt.relativenumber = false
+opt.mouse = "a"
+opt.showmode = false
+opt.clipboard = "unnamedplus"
+opt.breakindent = true
+opt.undofile = true
+opt.ignorecase = true
+opt.smartcase = true
+opt.signcolumn = "yes"
+opt.updatetime = 250
+opt.timeoutlen = 300
+opt.splitright = true
+opt.splitbelow = true
+opt.termguicolors = true
+opt.cursorline = true
+opt.scrolloff = 6
+opt.sidescrolloff = 8
+opt.wrap = false
+opt.expandtab = true
+opt.shiftwidth = 2
+opt.tabstop = 2
+opt.softtabstop = 2
+opt.smartindent = true
+opt.completeopt = { "menu", "menuone", "noselect" }
+opt.confirm = true
+opt.colorcolumn = "80"
+opt.laststatus = 3
+opt.pumheight = 12
+opt.winborder = "rounded"
+
+opt.foldmethod = "expr"
+opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+opt.foldlevel = 99
+opt.foldlevelstart = 99
+opt.foldenable = true
+
+vim.g.have_nerd_font = true
