@@ -42,6 +42,8 @@ return {
         enabled = true,
         sources = {
           explorer = {
+            -- Keep search results when focus moves back to the editor.
+            follow_file = false,
             hidden = true,
             ignored = true,
             exclude = { ".git", "node_modules", "dist", "bin", "obj" },
